@@ -621,7 +621,7 @@ if(typeof VMM != 'undefined') {
 				_event_data = event_data;
 			}
 			if( typeof( jQuery ) != 'undefined' ){
-				jQuery(element).load(_event_data, callback_function);
+				jQuery(element).on("load",_event_data, callback_function);
 			}
 		},
 		
